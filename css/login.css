@@ -1,0 +1,233 @@
+  
+body {
+    overflow-x: hidden;
+    /* no horizontal scrolling */
+    font-family: 'Montserrat', sans-serif;
+    color: #616971;
+}
+/*--------------------------------------------------------------
+#  TOP BAR 
+--------------------------------------------------------------*/
+
+.top-bar {
+    background: #338AF3;
+    height: 2.8rem;
+    /* 1rem=16px */
+    padding: .5rem 0;
+}
+
+.top-bar p {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+/*--------------------------------------------------------------
+#  END==TOP BAR
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+#  NAVIGATION
+--------------------------------------------------------------*/
+
+.navbar-brand img {
+    height: 3.5rem;
+    /* resize logo */
+}
+
+.navbar {
+    background: #caf0f8;
+    font-size: 1.30rem;
+    /* make buttons text bigger */
+    font-weight: 550;
+    /* make buttons text bolder */
+    letter-spacing: .1rem;
+    /* space between button letters */
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
+    /* make navbar shadow */
+    z-index: 1;
+    /* to display the shadow on the image under nav */
+}
+
+.nav-item {
+    padding: .5rem;
+    /* space between buttons */
+}
+
+.nav-link {
+    /* make the color of the link (home, advice, etc) darker */
+    color: #5b5555!important;
+    /* !important to override "navbar-light" which bootstrap uses */
+}
+
+.nav-link.active,
+.nav-link:hover {
+    /* hover navbar buttons */
+    /* color: #1182e6!important; */
+    border-bottom: .05rem solid #1182e6;
+}
+
+.dropdown-menu a {
+    font-size: 1.15rem;
+    /* size of text buttons */
+    font-weight: 600;
+    color: #616971;
+    border: #616971;
+}
+
+.dropdown-menu a:hover {
+    /* make dropdown hover */
+    color: #1182e6!important;
+    background-color: transparent;
+    /* remove background color */
+    border-bottom: 0.1rem solid #1182e6;
+}
+
+
+/*--------------------------------------------------------------
+#  END==NAVIGATION
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+#  REGISTER FORM
+--------------------------------------------------------------*/
+
+  
+.icon-box .icon {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50%);
+    margin-top: -80px;
+}
+
+.icon-box {
+     height: 100px;
+}
+
+.icon {
+    color: white;
+    background:#4981b3;
+    padding:50px;
+    border-radius: 80%;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #338AF3; 
+}
+  
+.inner {
+    position: relative;
+    width: 435px; 
+}
+  
+form {
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 77px 61px 66px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px #338AF3;
+}
+  
+.form-holder {
+    position: relative;
+    margin-bottom: 21px; 
+}
+
+.form-holder span {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #333; 
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    display: block;
+    width: 100%;
+    height: 38px;
+    background: none;
+    padding: 3px 42px 0px;
+    color: #666;
+    font-size: 16px; 
+    }
+
+.form-control:focus {
+    border-bottom: 1px solid #4981b3; 
+}
+  
+button {
+    border: none;
+    width: 100%;
+    height: 49px;
+    margin-top: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: #4981b3;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 1;
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden; 
+}
+
+
+button:hover, button:focus {
+    background-color: #68a0d2;
+}
+
+.socket {
+    background-color: #222222;
+    border-top: .1rem solid #4981b3;
+}
+    
+  
+@media (max-width: 991px) {
+.inner {
+    width: 400px;
+    left: 4%; 
+    } 
+}
+
+@media (max-width: 767px) {
+    .inner {
+      width: 100%;
+      left: 0; 
+    }
+    .top-bar p {
+        font-size: 15px;
+    }
+    .top-bar {
+        height: 40px;
+    }
+    .wrapper {
+      background: none; 
+    } 
+}
+@media (max-width: 480px) {
+    .top-bar p {
+        font-size: 10px;
+    }
+    .top-bar {
+        height: 40px;
+    }
+}
+  
+
+
+      

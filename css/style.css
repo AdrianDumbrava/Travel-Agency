@@ -1,0 +1,718 @@
+/*-- Body Reset --*/
+
+body {
+    overflow-x: hidden;
+    /* no horizontal scrolling */
+    font-family: 'Montserrat', sans-serif;
+    color: #616971;
+}
+
+
+/* Devider Headings */
+
+.devider {
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.devider i {
+    color: white;
+    height: 1rem;
+}
+
+.devider:before,
+.devider:after {
+    content: "________________";
+    color: black;
+    position: relative;
+    bottom: 6px;
+}
+
+.devider:before {
+    right: 1rem;
+}
+
+.devider:after {
+    left: 1rem;
+}
+
+
+/* End Devider Headings */
+
+
+/*--------------------------------------------------------------
+#  TOP BAR 
+--------------------------------------------------------------*/
+
+.top-bar {
+    background: #338AF3;
+    height: 2.8rem;
+    /* 1rem=16px */
+    padding: .5rem 0;
+}
+
+.top-bar p {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+/*--------------------------------------------------------------
+#  END==TOP BAR
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+#  NAVIGATION
+--------------------------------------------------------------*/
+
+.navbar-brand img {
+    height: 3.5rem;
+    /* resize logo */
+}
+
+.navbar {
+    background: #caf0f8;
+    font-size: 1.30rem;
+    /* make buttons text bigger */
+    font-weight: 550;
+    /* make buttons text bolder */
+    letter-spacing: .1rem;
+    /* space between button letters */
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
+    /* make navbar shadow */
+    z-index: 1;
+    /* to display the shadow on the image under nav */
+}
+
+.nav-item {
+    padding: .5rem;
+    /* space between buttons */
+}
+
+.nav-link {
+    /* make the color of the link (home, advice, etc) darker */
+    color: #5b5555!important;
+    /* !important to override "navbar-light" which bootstrap uses */
+}
+
+.nav-link.active,
+.nav-link:hover {
+    /* hover navbar buttons */
+    /* color: #1182e6!important; */
+    border-bottom: .05rem solid #1182e6;
+}
+
+.dropdown-menu a {
+    font-size: 1.15rem;
+    /* size of text buttons */
+    font-weight: 600;
+    color: #616971;
+    border: #616971;
+}
+
+.dropdown-menu a:hover {
+    /* make dropdown hover */
+    color: #1182e6!important;
+    background-color: transparent;
+    /* remove background color */
+    border-bottom: 0.1rem solid #1182e6;
+}
+
+
+/*--------------------------------------------------------------
+#  END==NAVIGATION
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+#  CAROUSEL - Home Section
+--------------------------------------------------------------*/
+
+#carousel {
+    box-shadow: 0 .3rem .3rem rgba(0, 0, 0, .2);
+    /* make shadow to the bottom of carousel */
+}
+
+.carousel-inner {
+    max-height: 40rem!important;
+    /* cat din poza sa se afiseze */
+}
+
+
+/*---Change Carousel Transition Speed --*/
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    transition: transform 1.2s ease;
+}
+
+
+/* Carousel Caption */
+
+.carousel-caption {
+    position: absolute; /* absolute - I can place it wherever on the page */
+    top: 55%;
+    transform: translateY(-50%);
+    /* center in the middle - the element will be in the middle of that top 54% */
+}
+
+.bg-custom {
+    /* custom background shade of carousel caption */
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    /* text of caption */
+    border-radius: 1rem;
+}
+
+.carousel-caption h1 {
+    /* custom h1 of carousel caption */
+    font-size: 2.8rem;
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+}
+
+.border-primary {
+    /* custom the inside line of caption */
+    border-top: .2rem solid #338AF3!important;
+}
+
+.carousel-caption p {
+    /* custom h3 of carousel caption */
+    font-size: 1.2rem;
+    text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
+}
+
+
+/* End Carousel Caption */
+
+
+/* Carousel Buttons */
+
+.btn-lg {
+    /* custom the buttons of carousel caption */
+    border-radius: 1;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    /* custom ONLY the primary button of carousel */
+    background-color: #4981b3;
+    border: .05rem solid #4981b3;
+}
+
+.btn-primary:hover,
+
+/* hover the primary button of carousel */
+
+.btn-primary:focus {
+    background-color: #68a0d2!important;
+    border: .05rem SOLID #68a0d2!important;
+}
+
+
+/* End Carousel Buttons */
+
+
+/*--------------------------------------------------------------
+#  END==CAROUSEL -> HOME Section
+--------------------------------------------------------------*/
+
+
+/* ==== ABOUT ME DETAILS-> HOME & ABOUT Section ==== */
+
+.btn-outline-dark {
+    color: white;
+    background-color: #4981b3!important;
+    border-color: #4981b3!important;
+    border: 0.5rem solid #4981b3;
+}
+
+.btn-outline-dark:hover {
+    color: #4981b3!important;
+}
+
+#aboutme img {
+    border-radius: 5%;
+    border: 6px solid #4981b3;
+    margin-bottom: 10px;
+    overflow: hidden;
+    /* white edges of images */
+}
+
+#aboutme .devider:before,
+#aboutme .devider:after {
+    content: "____________";
+}
+
+
+/*--------------------------------------------------------------
+#  SOCKET
+--------------------------------------------------------------*/
+
+.socket {
+    background-color: #222222;
+    border-top: .1rem solid #4981b3;
+}
+
+
+/*--------------------------------------------------------------
+#  END==SOCKET
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Sponsors Section
+--------------------------------------------------------------*/
+
+#supporters {
+    padding: 60px 0;
+}
+
+#supporters .supporters-wrap {
+    border-top: 1px solid #e0e5fa;
+    border-left: 1px solid #e0e5fa;
+    margin-bottom: 30px;
+}
+
+#supporters .supporter-logo {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #e0e5fa;
+    border-bottom: 1px solid #e0e5fa;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.5);
+    height: 160px;
+}
+
+#supporters .supporter-logo:hover img {
+    transform: scale(1.2);
+}
+
+#supporters img {
+    transition: all 0.4s ease-in-out;
+}
+
+
+/*--------------------------------------------------------------
+#  CONTACT -> About section
+--------------------------------------------------------------*/
+
+
+/* Contact me  */
+
+.single-icon p {
+    font-size: 1rem;
+    /* text font-size */
+    line-height: 2rem;
+    /* line between text */
+}
+
+.contact-icon {
+    margin-bottom: 2rem;
+    background: #03C4EB;
+    color: white;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+
+/* End Contact me */
+
+
+/* Contact Shortcut Icons */
+
+footer {
+    padding: 2rem;
+    background-color: #e9ecef;
+}
+
+footer a {
+    color: #03C4EB;
+    text-decoration: none;
+}
+
+ul.social {
+    list-style-type: none;
+    display: flex;
+    max-width: 20rem;
+    margin: auto;
+    padding: 0;
+}
+
+ul.social li {
+    margin: 0 auto;
+}
+
+footer .svg-inline--fa {
+    /* make social icons bigger */
+    font-size: 2.3rem;
+}
+
+footer.social .svg-inline--fa:hover {
+    color: #338AF3;
+}
+
+
+/* End Contact Shortcut Icons */
+
+
+/*--------------------------------------------------------------
+#  END==CONTACT -> About section
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Hotel & Resorts
+--------------------------------------------------------------*/
+
+.hotels h2 {
+    padding: 1rem 1rem 1.5rem;
+    /* padding pentru h2 */
+}
+
+.hotels .captionn {
+    /* image custom */
+    border: 0;
+    padding: 160px 20px 20px 20px;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hotels .captionn-body {
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.9rem 1.8rem;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+    transition: ease-in-out 0.5s;
+    border-radius: 5px;
+}
+
+.hotels .captionn-title {
+    /* caption title */
+    font-weight: 5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #222222;
+}
+
+.hotels .captionn-text {
+    color: #5e5e5e;
+}
+
+.hotels .read-more a {
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 0.4s;
+}
+
+.hotels .read-more a:hover {
+    text-decoration: underline;
+}
+
+.hotels .captionn:hover .captionn-body {
+    background: #338AF3
+}
+
+.hotels .captionn:hover .read-more a,
+.hotels .captionn:hover .captionn-title,
+.hotels .captionn:hover .captionn-title a,
+.hotels .captionn:hover .captionn-text {
+    color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# END--Hotel & Resorts
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+Tours & Activities
+--------------------------------------------------------------*/
+
+.activities {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.activities h2 {
+    padding: 1rem;
+    color: #428bca;
+}
+
+#activities img {
+    border-radius: 8%;
+    border: 3px solid #4981b3;
+    margin-bottom: 5px;
+    overflow: hidden;
+    /* white edges of images */
+    background-color: black;
+    opacity: 1.2;
+}
+
+.activities .container {
+    box-shadow: 0 .3rem .3rem rgba(0, 0, 0, .2);
+    padding: 1rem;
+    background-color: #e9ecef;
+}
+
+.activities .section-title p {
+    text-align: left;
+    font-style: italic;
+    color: #666;
+}
+
+.activities .activities-content {
+    padding: 2.5rem;
+}
+
+.activities .icon-box .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    background: #f1f7fb;
+    border-radius: .3rem;
+    transition: 0.4s;
+}
+
+.activities .icon-box:hover .icon {
+    background: #428bca;
+}
+
+.activities .icon-box .moreinfo {
+    margin-left: 95px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.activities .icon-box {
+    color: #343a40;
+    transition: 0.3s;
+}
+
+.activities .icon-box {
+    margin-left: 45px;
+    line-height: 24px;
+    font-size: 14px;
+    padding: 1rem;
+}
+
+#activities .devider:before,
+#activities .devider:after {
+    content: "______________________";
+}
+
+
+/*--------------------------------------------------------------
+END==TOURS & ACTIVITIES
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+FIEXED BACKGROUND IMG -> OTHER SERVICES SECTION
+--------------------------------------------------------------*/
+
+#flights {
+    background: url('/final/img/other/flights.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#rentcar {
+    background: url('/final/img/other/cars.jpg');
+    background-size: cover;
+    /* show photo on all container width */
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#cruise {
+    background: url('/final/img/other/cruise.jpg');
+    background-size: cover;
+    /* show photo on all container width */
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.other-imgfixed,
+.content {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.inner {
+    min-height: 40.5rem;
+    position: relative;
+}
+
+.other-imgfixed .inner {
+    background: rgba(0, 0, 0, 0.2) repeat;
+}
+
+.copy {
+    color: white;
+    position: absolute;
+    top: 50%;
+    height: 10em;
+    margin-top: -5em;
+    width: 100%;
+}
+
+
+/*--------------------------------------------------------------
+END==FIEXED BACKGROUND IMG -> OTHER SERVICES SECTION*
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# CUSTOMERS-> ABOUT Section
+--------------------------------------------------------------*/
+
+#customers {
+    background: #e9ecef;
+    /* background color of customer section */
+    padding: 30px 0;
+}
+
+#customers .profile .pic {
+    border-radius: 20%;
+    border: 6px solid #fff;
+    margin-bottom: 10px;
+    overflow: hidden;
+    /* white edges of images */
+    height: 260px;
+    width: 260px;
+}
+
+#customers .profile .pic img {
+    max-width: 100%;
+    /* full size of photo */
+}
+
+#customers .profile h4 {
+    font-weight: 600;
+    color: #03C4EB;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#customers .profile span {
+    color: #333333;
+}
+
+#customers .quote {
+    position: relative;
+    background: #fff;
+    justify-content: center;
+    padding: 3.1rem;
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    border-radius: 4rem;
+}
+
+#customers .quote b {
+    display: inline-block;
+    font-size: 10px;
+    left: -9px;
+    position: relative;
+    top: -8px;
+}
+
+#customers .quote small {
+    display: inline-block;
+    right: -9px;
+    position: relative;
+    top: 4px;
+}
+
+#customers .devider:before,
+#customers .devider:after {
+    content: "__________________________";
+}
+
+
+/*--------------------------------------------------------------
+# END--CUSTOMERS-> ABOUT Section
+--------------------------------------------------------------*/
+
+
+/*============= MEDIA QUERIES =============*/
+@media (min-width: 2000px) {
+    .carousel-caption {
+        top: 49%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #customers .quote {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    #customers .quote {
+        margin-top: 0;
+    }
+    .carousel-caption {
+        top: 50%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .btn-lg {
+        font-size: 10px;
+    }
+    .carousel-indicators li {
+        width: 10px;
+    }
+    .svg-inline--fa.fa-w-8 {
+        width: 15px;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 10%;
+    }
+    h4 {
+        font-size: 15px;
+    }
+    #customers .devider:before,
+    #customers .devider:after {
+        content: "___________";
+    }
+    #customers .profile .pic {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-bar p {
+        font-size: 10px;
+    }
+    .top-bar {
+        height: 30px;
+    }
+}
+
+
