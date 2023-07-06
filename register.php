@@ -3,7 +3,7 @@
     <?php
     if (isset($_POST['register'])) {
         //database connection 'formular_contact'
-        $servername = "localhost";
+        $servername = "localhost"; //test
         $username = "root";
         $password = "";
         $dbname = "final";
